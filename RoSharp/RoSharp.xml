@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RoSharp</name>
+    </assembly>
+    <members>
+        <member name="M:RoSharp.API.Assets.AssetVersionAsync(System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int32})">
+            <summary>
+            V1 of version history API returns version history of a specified asset.
+            </summary>
+            <param name="assetId">The ID of the asset</param>
+            <param name="placeId">(Optional) the id of the place the asset belongs to</param>
+            <param name="page">(Optional)The page of version history</param>
+            <returns></returns>
+        </member>
+        <member name="M:RoSharp.API.Assets.AssetVersionAsync(System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int32},RoSharp.API.SortOrder,System.Nullable{System.Int32})">
+            <summary>
+            V2 of version history API returns version history of a specified asset.
+            </summary>
+            <param name="assetId">The ID of the asset</param>
+            <param name="placeId">(Optional) the id of the place the asset belongs to</param>
+            <param name="cursor">(Optional) Cursor where the results should start from</param>
+            <param name="sortOrder">(Optional) Order the version should be in</param>
+            <param name="limit">(Optional) How many results should be returned</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
