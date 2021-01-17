@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="Welcome to the RoSharp documentation" Url="html/fb3c5bdd-a641-47d5-8440-aaeb81244304.htm" />
+  <HelpTOCNode Id="6b57f449-be4c-4069-90e0-76608d01094b" Title="RoSharp" Url="html/N_RoSharp.htm">
+    <HelpTOCNode Id="54eaa3da-9bdb-4013-a412-527f5e851d90" Title="RoSharpClient Class" Url="html/T_RoSharp_RoSharpClient.htm">
+      <HelpTOCNode Title="RoSharpClient Constructor " Url="html/M_RoSharp_RoSharpClient__ctor.htm" />
+      <HelpTOCNode Title="RoSharpClient Methods" Url="html/Methods_T_RoSharp_RoSharpClient.htm" />
+      <HelpTOCNode Id="11057c17-dbd9-4457-9e0d-edadae791b9e" Title="RoSharpClient Fields" Url="html/Fields_T_RoSharp_RoSharpClient.htm">
+        <HelpTOCNode Title="Assets Field" Url="html/F_RoSharp_RoSharpClient_Assets.htm" />
+        <HelpTOCNode Title="Currency Field" Url="html/F_RoSharp_RoSharpClient_Currency.htm" />
+        <HelpTOCNode Title="Friends Field" Url="html/F_RoSharp_RoSharpClient_Friends.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="49215812-33ab-4f1f-826d-d80e45e0d2cc" Title="RoSharp.API" Url="html/N_RoSharp_API.htm">
+    <HelpTOCNode Id="58d5bf1b-4797-455e-bd01-5d89d33681b4" Title="Assets Class" Url="html/T_RoSharp_API_Assets.htm">
+      <HelpTOCNode Title="Assets Constructor " Url="html/M_RoSharp_API_Assets__ctor.htm" />
+      <HelpTOCNode Id="0c9374e5-0973-435f-908c-f7e8cda467db" Title="Assets Methods" Url="html/Methods_T_RoSharp_API_Assets.htm">
+        <HelpTOCNode Id="f9554ab7-aa1a-4ddf-b9ab-80e7b1a2e398" Title="AssetVersionAsync Method " Url="html/Overload_RoSharp_API_Assets_AssetVersionAsync.htm">
+          <HelpTOCNode Title="AssetVersionAsync Method (Int64, Nullable(Int64), Nullable(Int32))" Url="html/M_RoSharp_API_Assets_AssetVersionAsync.htm" />
+          <HelpTOCNode Title="AssetVersionAsync Method (Int64, Nullable(Int64), Nullable(Int32), SortOrder, Nullable(Int32))" Url="html/M_RoSharp_API_Assets_AssetVersionAsync_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="AwardBadgeAsync Method " Url="html/M_RoSharp_API_Assets_AwardBadgeAsync.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="03365070-bf53-4bb3-9f9f-5fc7fbfe2e9f" Title="BaseAPI Class" Url="html/T_RoSharp_API_BaseAPI.htm">
+      <HelpTOCNode Title="BaseAPI Constructor " Url="html/M_RoSharp_API_BaseAPI__ctor.htm" />
+      <HelpTOCNode Title="BaseAPI Methods" Url="html/Methods_T_RoSharp_API_BaseAPI.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="74cc7d24-bef4-4249-bb51-22b774e77f7b" Title="Currency Class" Url="html/T_RoSharp_API_Currency.htm">
+      <HelpTOCNode Title="Currency Constructor " Url="html/M_RoSharp_API_Currency__ctor.htm" />
+      <HelpTOCNode Id="bff93a97-79f5-40bc-bfa7-c657262847f4" Title="Currency Methods" Url="html/Methods_T_RoSharp_API_Currency.htm">
+        <HelpTOCNode Title="GetBalanceAsync Method " Url="html/M_RoSharp_API_Currency_GetBalanceAsync.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7e9d4cb9-b341-4654-9655-3ad3aa9fd07d" Title="Friends Class" Url="html/T_RoSharp_API_Friends.htm">
+      <HelpTOCNode Title="Friends Constructor " Url="html/M_RoSharp_API_Friends__ctor.htm" />
+      <HelpTOCNode Title="Friends Methods" Url="html/Methods_T_RoSharp_API_Friends.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="SortOrder Enumeration" Url="html/T_RoSharp_API_SortOrder.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="f76c60f2-e256-4ba0-9fb1-175c0d8c6068" Title="RoSharp.Exceptions" Url="html/N_RoSharp_Exceptions.htm">
+    <HelpTOCNode Id="926cf970-425c-4921-aac7-f63be7f48873" Title="TokenFailureException Class" Url="html/T_RoSharp_Exceptions_TokenFailureException.htm">
+      <HelpTOCNode Title="TokenFailureException Constructor " Url="html/M_RoSharp_Exceptions_TokenFailureException__ctor.htm" />
+      <HelpTOCNode Title="TokenFailureException Properties" Url="html/Properties_T_RoSharp_Exceptions_TokenFailureException.htm" />
+      <HelpTOCNode Title="TokenFailureException Methods" Url="html/Methods_T_RoSharp_Exceptions_TokenFailureException.htm" />
+      <HelpTOCNode Title="TokenFailureException Events" Url="html/Events_T_RoSharp_Exceptions_TokenFailureException.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="ad913d14-0030-4a15-a5a4-d80eb422bd9a" Title="RoSharp.Model" Url="html/N_RoSharp_Model.htm">
+    <HelpTOCNode Id="a12a520c-c640-4349-be0c-863872fd89bc" Title="AssetVersion Class" Url="html/T_RoSharp_Model_AssetVersion.htm">
+      <HelpTOCNode Title="AssetVersion Constructor " Url="html/M_RoSharp_Model_AssetVersion__ctor.htm" />
+      <HelpTOCNode Id="66b9eb20-9f27-4964-8585-7099aa154e8d" Title="AssetVersion Properties" Url="html/Properties_T_RoSharp_Model_AssetVersion.htm">
+        <HelpTOCNode Title="AssetId Property " Url="html/P_RoSharp_Model_AssetVersion_AssetId.htm" />
+        <HelpTOCNode Title="Created Property " Url="html/P_RoSharp_Model_AssetVersion_Created.htm" />
+        <HelpTOCNode Title="CreatingUniverseId Property " Url="html/P_RoSharp_Model_AssetVersion_CreatingUniverseId.htm" />
+        <HelpTOCNode Title="CreatorTargetId Property " Url="html/P_RoSharp_Model_AssetVersion_CreatorTargetId.htm" />
+        <HelpTOCNode Title="CreatorType Property " Url="html/P_RoSharp_Model_AssetVersion_CreatorType.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P_RoSharp_Model_AssetVersion_Id.htm" />
+        <HelpTOCNode Title="ParentAssetVersionId Property " Url="html/P_RoSharp_Model_AssetVersion_ParentAssetVersionId.htm" />
+        <HelpTOCNode Title="RawContentId Property " Url="html/P_RoSharp_Model_AssetVersion_RawContentId.htm" />
+        <HelpTOCNode Title="Updated Property " Url="html/P_RoSharp_Model_AssetVersion_Updated.htm" />
+        <HelpTOCNode Title="VersionNumber Property " Url="html/P_RoSharp_Model_AssetVersion_VersionNumber.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AssetVersion Methods" Url="html/Methods_T_RoSharp_Model_AssetVersion.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="86a8d87f-6036-4112-8c75-534e779bba7d" Title="Balance Class" Url="html/T_RoSharp_Model_Balance.htm">
+      <HelpTOCNode Title="Balance Constructor " Url="html/M_RoSharp_Model_Balance__ctor.htm" />
+      <HelpTOCNode Id="5ffbf80a-41ed-4dfc-95c6-0bfad54540c9" Title="Balance Properties" Url="html/Properties_T_RoSharp_Model_Balance.htm">
+        <HelpTOCNode Title="robux Property " Url="html/P_RoSharp_Model_Balance_robux.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Balance Methods" Url="html/Methods_T_RoSharp_Model_Balance.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="12aa4546-10ac-4555-9bfa-0f22b59a1190" Title="PageContainer(T) Class" Url="html/T_RoSharp_Model_PageContainer_1.htm">
+      <HelpTOCNode Title="PageContainer(T) Constructor " Url="html/M_RoSharp_Model_PageContainer_1__ctor.htm" />
+      <HelpTOCNode Id="33c92766-0b94-44a0-b675-453fc34d21bd" Title="PageContainer(T) Properties" Url="html/Properties_T_RoSharp_Model_PageContainer_1.htm">
+        <HelpTOCNode Title="data Property " Url="html/P_RoSharp_Model_PageContainer_1_data.htm" />
+        <HelpTOCNode Title="nextPageCursor Property " Url="html/P_RoSharp_Model_PageContainer_1_nextPageCursor.htm" />
+        <HelpTOCNode Title="previousPageContainer Property " Url="html/P_RoSharp_Model_PageContainer_1_previousPageContainer.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PageContainer(T) Methods" Url="html/Methods_T_RoSharp_Model_PageContainer_1.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

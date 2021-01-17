@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Ascending enumeration member" Url="html/T_RoSharp_API_SortOrder.htm" />
+  <HelpKINode Title="AssetId property" Url="html/P_RoSharp_Model_AssetVersion_AssetId.htm" />
+  <HelpKINode Title="Assets class">
+    <HelpKINode Title="Assets Class" Url="html/T_RoSharp_API_Assets.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_API_Assets__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_API_Assets.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Assets field" Url="html/F_RoSharp_RoSharpClient_Assets.htm" />
+  <HelpKINode Title="Assets.Assets constructor" Url="html/M_RoSharp_API_Assets__ctor.htm" />
+  <HelpKINode Title="Assets.AssetVersionAsync method" Url="html/Overload_RoSharp_API_Assets_AssetVersionAsync.htm" />
+  <HelpKINode Title="Assets.AwardBadgeAsync method" Url="html/M_RoSharp_API_Assets_AwardBadgeAsync.htm" />
+  <HelpKINode Title="AssetVersion class">
+    <HelpKINode Title="AssetVersion Class" Url="html/T_RoSharp_Model_AssetVersion.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_Model_AssetVersion__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_Model_AssetVersion.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_RoSharp_Model_AssetVersion.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AssetVersion.AssetId property" Url="html/P_RoSharp_Model_AssetVersion_AssetId.htm" />
+  <HelpKINode Title="AssetVersion.AssetVersion constructor" Url="html/M_RoSharp_Model_AssetVersion__ctor.htm" />
+  <HelpKINode Title="AssetVersion.Created property" Url="html/P_RoSharp_Model_AssetVersion_Created.htm" />
+  <HelpKINode Title="AssetVersion.CreatingUniverseId property" Url="html/P_RoSharp_Model_AssetVersion_CreatingUniverseId.htm" />
+  <HelpKINode Title="AssetVersion.CreatorTargetId property" Url="html/P_RoSharp_Model_AssetVersion_CreatorTargetId.htm" />
+  <HelpKINode Title="AssetVersion.CreatorType property" Url="html/P_RoSharp_Model_AssetVersion_CreatorType.htm" />
+  <HelpKINode Title="AssetVersion.Id property" Url="html/P_RoSharp_Model_AssetVersion_Id.htm" />
+  <HelpKINode Title="AssetVersion.ParentAssetVersionId property" Url="html/P_RoSharp_Model_AssetVersion_ParentAssetVersionId.htm" />
+  <HelpKINode Title="AssetVersion.RawContentId property" Url="html/P_RoSharp_Model_AssetVersion_RawContentId.htm" />
+  <HelpKINode Title="AssetVersion.Updated property" Url="html/P_RoSharp_Model_AssetVersion_Updated.htm" />
+  <HelpKINode Title="AssetVersion.VersionNumber property" Url="html/P_RoSharp_Model_AssetVersion_VersionNumber.htm" />
+  <HelpKINode Title="AssetVersionAsync method" Url="html/Overload_RoSharp_API_Assets_AssetVersionAsync.htm" />
+  <HelpKINode Title="AwardBadgeAsync method" Url="html/M_RoSharp_API_Assets_AwardBadgeAsync.htm" />
+  <HelpKINode Title="Balance class">
+    <HelpKINode Title="Balance Class" Url="html/T_RoSharp_Model_Balance.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_Model_Balance__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_Model_Balance.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_RoSharp_Model_Balance.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Balance.Balance constructor" Url="html/M_RoSharp_Model_Balance__ctor.htm" />
+  <HelpKINode Title="Balance.robux property" Url="html/P_RoSharp_Model_Balance_robux.htm" />
+  <HelpKINode Title="BaseAPI class">
+    <HelpKINode Title="BaseAPI Class" Url="html/T_RoSharp_API_BaseAPI.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_API_BaseAPI__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_API_BaseAPI.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseAPI.BaseAPI constructor" Url="html/M_RoSharp_API_BaseAPI__ctor.htm" />
+  <HelpKINode Title="Created property" Url="html/P_RoSharp_Model_AssetVersion_Created.htm" />
+  <HelpKINode Title="CreatingUniverseId property" Url="html/P_RoSharp_Model_AssetVersion_CreatingUniverseId.htm" />
+  <HelpKINode Title="CreatorTargetId property" Url="html/P_RoSharp_Model_AssetVersion_CreatorTargetId.htm" />
+  <HelpKINode Title="CreatorType property" Url="html/P_RoSharp_Model_AssetVersion_CreatorType.htm" />
+  <HelpKINode Title="Currency class">
+    <HelpKINode Title="Currency Class" Url="html/T_RoSharp_API_Currency.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_API_Currency__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_API_Currency.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Currency field" Url="html/F_RoSharp_RoSharpClient_Currency.htm" />
+  <HelpKINode Title="Currency.Currency constructor" Url="html/M_RoSharp_API_Currency__ctor.htm" />
+  <HelpKINode Title="Currency.GetBalanceAsync method" Url="html/M_RoSharp_API_Currency_GetBalanceAsync.htm" />
+  <HelpKINode Title="data property" Url="html/P_RoSharp_Model_PageContainer_1_data.htm" />
+  <HelpKINode Title="Descending enumeration member" Url="html/T_RoSharp_API_SortOrder.htm" />
+  <HelpKINode Title="Friends class">
+    <HelpKINode Title="Friends Class" Url="html/T_RoSharp_API_Friends.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_API_Friends__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_API_Friends.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Friends field" Url="html/F_RoSharp_RoSharpClient_Friends.htm" />
+  <HelpKINode Title="Friends.Friends constructor" Url="html/M_RoSharp_API_Friends__ctor.htm" />
+  <HelpKINode Title="GetBalanceAsync method" Url="html/M_RoSharp_API_Currency_GetBalanceAsync.htm" />
+  <HelpKINode Title="Id property" Url="html/P_RoSharp_Model_AssetVersion_Id.htm" />
+  <HelpKINode Title="nextPageCursor property" Url="html/P_RoSharp_Model_PageContainer_1_nextPageCursor.htm" />
+  <HelpKINode Title="PageContainer(Of T) class">
+    <HelpKINode Title="PageContainer(T) Class" Url="html/T_RoSharp_Model_PageContainer_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_Model_PageContainer_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_Model_PageContainer_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_RoSharp_Model_PageContainer_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PageContainer(Of T).data property" Url="html/P_RoSharp_Model_PageContainer_1_data.htm" />
+  <HelpKINode Title="PageContainer(Of T).nextPageCursor property" Url="html/P_RoSharp_Model_PageContainer_1_nextPageCursor.htm" />
+  <HelpKINode Title="PageContainer(Of T).PageContainer constructor" Url="html/M_RoSharp_Model_PageContainer_1__ctor.htm" />
+  <HelpKINode Title="PageContainer(Of T).previousPageContainer property" Url="html/P_RoSharp_Model_PageContainer_1_previousPageContainer.htm" />
+  <HelpKINode Title="PageContainer&lt;T&gt; class">
+    <HelpKINode Title="PageContainer(T) Class" Url="html/T_RoSharp_Model_PageContainer_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_Model_PageContainer_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_Model_PageContainer_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_RoSharp_Model_PageContainer_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PageContainer&lt;T&gt;.data property" Url="html/P_RoSharp_Model_PageContainer_1_data.htm" />
+  <HelpKINode Title="PageContainer&lt;T&gt;.nextPageCursor property" Url="html/P_RoSharp_Model_PageContainer_1_nextPageCursor.htm" />
+  <HelpKINode Title="PageContainer&lt;T&gt;.PageContainer constructor" Url="html/M_RoSharp_Model_PageContainer_1__ctor.htm" />
+  <HelpKINode Title="PageContainer&lt;T&gt;.previousPageContainer property" Url="html/P_RoSharp_Model_PageContainer_1_previousPageContainer.htm" />
+  <HelpKINode Title="ParentAssetVersionId property" Url="html/P_RoSharp_Model_AssetVersion_ParentAssetVersionId.htm" />
+  <HelpKINode Title="previousPageContainer property" Url="html/P_RoSharp_Model_PageContainer_1_previousPageContainer.htm" />
+  <HelpKINode Title="RawContentId property" Url="html/P_RoSharp_Model_AssetVersion_RawContentId.htm" />
+  <HelpKINode Title="robux property" Url="html/P_RoSharp_Model_Balance_robux.htm" />
+  <HelpKINode Title="RoSharp namespace" Url="html/N_RoSharp.htm" />
+  <HelpKINode Title="RoSharp.API namespace" Url="html/N_RoSharp_API.htm" />
+  <HelpKINode Title="RoSharp.API.Assets class" Url="html/T_RoSharp_API_Assets.htm" />
+  <HelpKINode Title="RoSharp.API.BaseAPI class" Url="html/T_RoSharp_API_BaseAPI.htm" />
+  <HelpKINode Title="RoSharp.API.Currency class" Url="html/T_RoSharp_API_Currency.htm" />
+  <HelpKINode Title="RoSharp.API.Friends class" Url="html/T_RoSharp_API_Friends.htm" />
+  <HelpKINode Title="RoSharp.API.SortOrder enumeration" Url="html/T_RoSharp_API_SortOrder.htm" />
+  <HelpKINode Title="RoSharp.Exceptions namespace" Url="html/N_RoSharp_Exceptions.htm" />
+  <HelpKINode Title="RoSharp.Exceptions.TokenFailureException class" Url="html/T_RoSharp_Exceptions_TokenFailureException.htm" />
+  <HelpKINode Title="RoSharp.Model namespace" Url="html/N_RoSharp_Model.htm" />
+  <HelpKINode Title="RoSharp.Model.AssetVersion class" Url="html/T_RoSharp_Model_AssetVersion.htm" />
+  <HelpKINode Title="RoSharp.Model.Balance class" Url="html/T_RoSharp_Model_Balance.htm" />
+  <HelpKINode Title="RoSharp.Model.PageContainer(Of T) class" Url="html/T_RoSharp_Model_PageContainer_1.htm" />
+  <HelpKINode Title="RoSharp.Model.PageContainer&lt;T&gt; class" Url="html/T_RoSharp_Model_PageContainer_1.htm" />
+  <HelpKINode Title="RoSharp.RoSharpClient class" Url="html/T_RoSharp_RoSharpClient.htm" />
+  <HelpKINode Title="RoSharpClient class">
+    <HelpKINode Title="RoSharpClient Class" Url="html/T_RoSharp_RoSharpClient.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_RoSharpClient__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_RoSharp_RoSharpClient.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_RoSharpClient.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RoSharpClient.Assets field" Url="html/F_RoSharp_RoSharpClient_Assets.htm" />
+  <HelpKINode Title="RoSharpClient.Currency field" Url="html/F_RoSharp_RoSharpClient_Currency.htm" />
+  <HelpKINode Title="RoSharpClient.Friends field" Url="html/F_RoSharp_RoSharpClient_Friends.htm" />
+  <HelpKINode Title="RoSharpClient.RoSharpClient constructor" Url="html/M_RoSharp_RoSharpClient__ctor.htm" />
+  <HelpKINode Title="SortOrder enumeration" Url="html/T_RoSharp_API_SortOrder.htm" />
+  <HelpKINode Title="TokenFailureException class">
+    <HelpKINode Title="TokenFailureException Class" Url="html/T_RoSharp_Exceptions_TokenFailureException.htm" />
+    <HelpKINode Title="constructor" Url="html/M_RoSharp_Exceptions_TokenFailureException__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_RoSharp_Exceptions_TokenFailureException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_RoSharp_Exceptions_TokenFailureException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_RoSharp_Exceptions_TokenFailureException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TokenFailureException.TokenFailureException constructor" Url="html/M_RoSharp_Exceptions_TokenFailureException__ctor.htm" />
+  <HelpKINode Title="Updated property" Url="html/P_RoSharp_Model_AssetVersion_Updated.htm" />
+  <HelpKINode Title="VersionNumber property" Url="html/P_RoSharp_Model_AssetVersion_VersionNumber.htm" />
+  <HelpKINode Title="Welcome" Url="html/fb3c5bdd-a641-47d5-8440-aaeb81244304.htm" />
+</HelpKI>
