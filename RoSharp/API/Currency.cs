@@ -9,7 +9,7 @@ namespace RoSharp.API
 {
 	public class Currency : BaseAPI
 	{
-		public Currency(RoSharpClient client, RestClient restClient) : base(client, restClient)
+		internal Currency(RoSharpClient client, RestClient restClient) : base(client, restClient)
 		{
 		}
 		public async Task<Balance> GetBalanceAsync()

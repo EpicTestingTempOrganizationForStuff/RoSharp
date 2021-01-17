@@ -10,26 +10,25 @@ namespace RoSharp
 {
 	public class RoSharpClient
 	{
-		private readonly CookieContainer _cookie;
-		private readonly RestClient _client;
-
 		//APIs
 		public readonly Assets Assets;
 		public readonly Currency Currency;
+		public readonly Friends Friends;
 
 		public RoSharpClient(string cookie)
 		{
-			_cookie = new CookieContainer();
-			_cookie.Add(new Cookie(".ROBLOSECURITY", cookie)
+			CookieContainer cookieContainer = new CookieContainer();
+			cookieContainer.Add(new Cookie(".ROBLOSECURITY", cookie)
 			{
 				Domain = ".roblox.com"
 			});
-			_client = new RestClient();
-			_client.UseNewtonsoftJson();
-			_client.CookieContainer = _cookie;
+			RestClient client = new RestClient();
+			client.UseNewtonsoftJson();
+			client.CookieContainer = cookieContainer;
 
-			Assets = new Assets(this, _client);
-			Currency = new Currency(this, _client);
+			Assets = new Assets(this, client);
+			Currency = new Currency(this, client);
+			Friends = new Friends(this, client);
 		}
 	}
 }
