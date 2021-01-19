@@ -22,7 +22,7 @@ namespace RoSharp.API
 		public async Task<Balance> GetBalanceAsync()
 		{
 			IRestRequest request = new RestRequest($"{_baseUrl}/currency/balance");
-			IRestResponse<Balance> response = await _restClient.ExecuteAsync<Balance>(request).ConfigureAwait(false);
+			IRestResponse<Balance> response = await _restClient.ExecuteAsync<Balance>(request);
 			return response.Data;
 		}
 	}

@@ -11,7 +11,7 @@ namespace TestApp
 		{
 			RoSharpClient client = new RoSharpClient(Environment.GetEnvironmentVariable("COOKIE"));
 
-			List<RobloxUser> friends = await client.Friends.GetFriendsAsync(36218557).ConfigureAwait(false);
+			List<RobloxUser> friends = await client.Friends.GetFriendsAsync(36218557);
 			foreach(RobloxUser user in friends)
 			{
 				Console.WriteLine(user.Username);

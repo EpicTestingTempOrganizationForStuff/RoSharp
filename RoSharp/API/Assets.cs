@@ -44,7 +44,7 @@ namespace RoSharp.API
 			if (page != null)
 				request.AddParameter("page", page);
 
-			IRestResponse<List<AssetVersion>> response = await _restClient.ExecuteAsync<List<AssetVersion>>(request).ConfigureAwait(false);
+			IRestResponse<List<AssetVersion>> response = await _restClient.ExecuteAsync<List<AssetVersion>>(request);
 			return response.Data;
 		}
 		/// <summary>
@@ -67,7 +67,7 @@ namespace RoSharp.API
 			if (limit != null)
 				request.AddParameter("limit", limit);
 
-			IRestResponse<PageContainer<AssetVersion>> response = await _restClient.ExecuteAsync<PageContainer<AssetVersion>>(request).ConfigureAwait(false);
+			IRestResponse<PageContainer<AssetVersion>> response = await _restClient.ExecuteAsync<PageContainer<AssetVersion>>(request);
 			return response.Data;
 		}
 		/// <summary>
@@ -83,7 +83,7 @@ namespace RoSharp.API
 				.AddParameter("userId", userId)
 				.AddParameter("badgeId", badgeId)
 				.AddParameter("placeId", placeId);
-			IRestResponse response = await _restClient.ExecuteAsync(request).ConfigureAwait(false);
+			IRestResponse response = await _restClient.ExecuteAsync(request);
 			return response.Content;
 		}
 

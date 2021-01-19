@@ -39,8 +39,8 @@ namespace RoSharp
 			try
 			{
 				IRestRequest request = new RestRequest("https://www.roblox.com/authentication/signoutfromallsessionsandreauthenticate", Method.POST)
-					.AddHeader("token", await GetCSRF().ConfigureAwait(false));
-				IRestResponse response = await _client.ExecuteAsync(request).ConfigureAwait(false);
+					.AddHeader("token", await GetCSRF());
+				IRestResponse response = await _client.ExecuteAsync(request);
 				var header = response.Headers.FirstOrDefault(header => header.Name == "set-cookie");
 				if (header == default)
 					throw new CookieFailureException();
@@ -61,7 +61,7 @@ namespace RoSharp
 			while (true)
 			{
 				Thread.Sleep((int)Math.Round(_cookieRefresh));
-				Cookie cookie = await RefreshCookieAsync().ConfigureAwait(false);
+				Cookie cookie = await RefreshCookieAsync();
 				_cookieContainer.Add(cookie); //Should automatically overwrite the old one
 			}
 		}
@@ -102,7 +102,7 @@ namespace RoSharp
 			try
 			{
 				RestRequest request = new RestRequest("https://auth.roblox.com/v2/logout", Method.POST);
-				RestResponse res = (RestResponse)await _client.ExecuteAsync(request).ConfigureAwait(false);
+				RestResponse res = (RestResponse)await _client.ExecuteAsync(request);
 				var header = res.Headers.FirstOrDefault(header => header.Name == "x-csrf-token");
 				if (header == default)
 					throw new TokenFailureException();
@@ -113,6 +113,16 @@ namespace RoSharp
 				throw new TokenFailureException(error.Message);
 			}
 		}
-		
+		/// <summary>
+		/// Changes how often the cookie is refreshed by the code
+		/// </summary>
+		/// <param name="cookieRefreshSeconds">Time in seconds of how often the cookie should refresh itself</param>
+		public void SetCookieRefresh(float cookieRefreshSeconds)
+		{
+			_cookieRefresh = cookieRefreshSeconds * 1000;
+			_updateCookieThread.Abort();
+			_updateCookieThread = new Thread(new ThreadStart(UpdateCookieThread));
+			_updateCookieThread.Start();
+		}
 	}
 }

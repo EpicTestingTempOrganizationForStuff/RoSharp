@@ -24,7 +24,7 @@ namespace RoSharp.API
 			try
 			{
 				RestRequest request = new RestRequest("https://auth.roblox.com/v2/logout", Method.POST);
-				RestResponse res = (RestResponse)await _restClient.ExecuteAsync(request).ConfigureAwait(false);
+				RestResponse res = (RestResponse)await _restClient.ExecuteAsync(request);
 				var header = res.Headers.FirstOrDefault(header => header.Name == "x-csrf-token");
 				if (header == default)
 					throw new TokenFailureException();
