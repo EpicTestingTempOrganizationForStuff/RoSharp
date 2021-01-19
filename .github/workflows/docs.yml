@@ -2,7 +2,7 @@ name: ReleaseDocumentation
 
 on:
   push:
-    branches: [ Release ]
+    branches: [ release ]
 
 jobs:
   build:
