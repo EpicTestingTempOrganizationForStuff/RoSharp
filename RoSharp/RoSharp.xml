@@ -4,6 +4,26 @@
         <name>RoSharp</name>
     </assembly>
     <members>
+        <member name="T:RoSharp.API.SortOrder">
+            <summary>
+            Order to sort things when pages are involved
+            </summary>
+        </member>
+        <member name="F:RoSharp.API.SortOrder.Ascending">
+            <summary>
+            Sort in ascending order
+            </summary>
+        </member>
+        <member name="F:RoSharp.API.SortOrder.Descending">
+            <summary>
+            Sort in descending order
+            </summary>
+        </member>
+        <member name="T:RoSharp.API.Assets">
+            <summary>
+            API for Assets
+            </summary>
+        </member>
         <member name="M:RoSharp.API.Assets.AssetVersionAsync(System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int32})">
             <summary>
             V1 of version history API returns version history of a specified asset.
@@ -23,6 +43,239 @@
             <param name="sortOrder">(Optional) Order the version should be in</param>
             <param name="limit">(Optional) How many results should be returned</param>
             <returns></returns>
+        </member>
+        <member name="M:RoSharp.API.Assets.AwardBadgeAsync(System.UInt64,System.UInt64,System.UInt64)">
+            <summary>
+            Awards badge to the speciifed user
+            </summary>
+            <param name="userId">The ID of the user</param>
+            <param name="badgeId">The ID of the badge</param>
+            <param name="placeId">The ID of the place</param>
+            <returns>{userName} won {badgeCreatorName}'s "{badgeName}" award! (if successful)</returns>
+        </member>
+        <member name="T:RoSharp.API.BaseAPI">
+            <summary>
+            Master class for all APIs can be ignored by the user
+            </summary>
+        </member>
+        <member name="T:RoSharp.API.Currency">
+            <summary>
+            API for Currency
+            </summary>
+        </member>
+        <member name="M:RoSharp.API.Currency.GetBalanceAsync">
+            <summary>
+            Returns your Robux balance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RoSharp.API.Friends">
+            <summary>
+            API for Friends
+            </summary>
+        </member>
+        <member name="M:RoSharp.API.Friends.GetFriendsAsync(System.UInt64,System.Int32)">
+            <summary>
+            Returns a list of the players friends
+            </summary>
+            <param name="userId">The ID of the user.</param>
+            <param name="page">(Optional) The page to retrieve.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RoSharp.API.Friends.AcceptFriendRequestAsync(System.UInt64)">
+            <summary>
+            Accepts an incoming friend request
+            </summary>
+            <param name="userId">The ID of the user who sent the request</param>
+            <returns></returns>
+        </member>
+        <member name="M:RoSharp.API.Friends.DeclineFriendRequestAsync(System.UInt64)">
+            <summary>
+            Declines an incoming friend request
+            </summary>
+            <param name="userId">The ID of the user who sent the request</param>
+            <returns></returns>
+        </member>
+        <member name="M:RoSharp.API.Friends.SendFriendRequestAsync(System.UInt64)">
+            <summary>
+            Sends a friend request
+            </summary>
+            <param name="userId">The ID of the user to send the request too</param>
+            <returns></returns>
+        </member>
+        <member name="T:RoSharp.Exceptions.CookieFailureException">
+            <summary>
+            Thrown when a cookie fails to refresh.
+            </summary>
+        </member>
+        <member name="T:RoSharp.Exceptions.TokenFailureException">
+            <summary>
+            Thrown when a CSRF token has failed to get
+            </summary>
+        </member>
+        <member name="T:RoSharp.Model.AssetVersion">
+            <summary>
+            Asset Version
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.Id">
+            <summary>
+            The ID of the version
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.AssetId">
+            <summary>
+            The ID of the asset
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.VersionNumber">
+            <summary>
+            The version of the asset
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.RawContentId">
+            <summary>
+            Unsure
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.ParentAssetVersionId">
+            <summary>
+            Unsure
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.CreatorType">
+            <summary>
+            Whether it is owned by a group or a player
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.CreatorTargetId">
+            <summary>
+            The ID of the group or player
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.CreatingUniverseId">
+            <summary>
+            What universe it was created in, if applicable.
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.Created">
+            <summary>
+            Date when it was created (string format for now)
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.AssetVersion.Updated">
+            <summary>
+            Date when it was last updated (string format for now)
+            </summary>
+        </member>
+        <member name="T:RoSharp.Model.Balance">
+            <summary>
+            ROBLOX Balance
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.Balance.robux">
+            <summary>
+            The amount of robux the account has
+            </summary>
+        </member>
+        <member name="T:RoSharp.Model.PageContainer`1">
+            <summary>
+            Page container for V2 of roblox API, using cursor rather than page.
+            </summary>
+            <typeparam name="T">The data that is being displayed</typeparam>
+        </member>
+        <member name="P:RoSharp.Model.PageContainer`1.previousPageContainer">
+            <summary>
+            Previous page
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.PageContainer`1.nextPageCursor">
+            <summary>
+            Next page
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.PageContainer`1.data">
+            <summary>
+            Data returned
+            </summary>
+        </member>
+        <member name="T:RoSharp.Model.RobloxUser">
+            <summary>
+            A ROBLOX User
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.RobloxUser.Id">
+            <summary>
+            The UserID of the user
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.RobloxUser.Username">
+            <summary>
+            The username of the user
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.RobloxUser.AvatarUri">
+            <summary>
+            The URI to the profile picture of the user
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.RobloxUser.AvatarFinal">
+            <summary>
+            Unsure.
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.RobloxUser.IsOnline">
+            <summary>
+            Whether the player is online or not
+            </summary>
+        </member>
+        <member name="T:RoSharp.Model.SuccessMessage">
+            <summary>
+            A ROBLOX success message
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.SuccessMessage.success">
+            <summary>
+            Whether the request was successful
+            </summary>
+        </member>
+        <member name="P:RoSharp.Model.SuccessMessage.message">
+            <summary>
+            Message returned by ROBLOX
+            </summary>
+        </member>
+        <member name="T:RoSharp.RoSharpClient">
+            <summary>
+            RoSharp Client the main client to perform all API requests with RoSharp.
+            </summary>
+        </member>
+        <member name="F:RoSharp.RoSharpClient.Assets">
+            <summary>
+            API for Assets
+            </summary>
+        </member>
+        <member name="F:RoSharp.RoSharpClient.Currency">
+            <summary>
+            API for Currency
+            </summary>
+        </member>
+        <member name="F:RoSharp.RoSharpClient.Friends">
+            <summary>
+            API for Friends
+            </summary>
+        </member>
+        <member name="M:RoSharp.RoSharpClient.#ctor(System.String)">
+            <summary>
+            Initialises a new RoSharp client.
+            </summary>
+            <param name="cookie">The cookie of the user you wish to interact with the API with</param>
+        </member>
+        <member name="M:RoSharp.RoSharpClient.#ctor(System.String,System.Single)">
+            <summary>
+            Initialises a new RoSharp client.
+            </summary>
+            <param name="cookie">The cookie of the user you wish to interact with the API with</param>
+            <param name="cookieRefreshSeconds">Time in seconds of how often the cookie should refresh itself</param>
         </member>
     </members>
 </doc>

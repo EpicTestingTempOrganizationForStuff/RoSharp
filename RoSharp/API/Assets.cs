@@ -7,11 +7,23 @@ using RoSharp.Model;
 
 namespace RoSharp.API
 {
+	/// <summary>
+	/// Order to sort things when pages are involved
+	/// </summary>
 	public enum SortOrder
 	{
+		/// <summary>
+		/// Sort in ascending order
+		/// </summary>
 		Ascending = 1,
+		/// <summary>
+		/// Sort in descending order
+		/// </summary>
 		Descending = 2
 	}
+	/// <summary>
+	/// API for Assets
+	/// </summary>
 	public class Assets : BaseAPI
 	{
 		internal Assets(RoSharpClient client, RestClient restClient) : base(client, restClient)
@@ -26,14 +38,13 @@ namespace RoSharp.API
 		/// <returns></returns>
 		public async Task<List<AssetVersion>> AssetVersionAsync(long assetId, long? placeId = null, int? page = null)
 		{
-			IRestRequest request = new RestRequest("https://api.roblox.com/assets/{id}/versions")
-				.AddUrlSegment("id", assetId);
+			IRestRequest request = new RestRequest($"{_baseUrl}/assets/{assetId}/versions");
 			if(placeId != null)
 				request.AddParameter("placeId", placeId);
 			if (page != null)
 				request.AddParameter("page", page);
 
-			IRestResponse<List<AssetVersion>> response = await _restClient.ExecuteAsync<List<AssetVersion>>(request);
+			IRestResponse<List<AssetVersion>> response = await _restClient.ExecuteAsync<List<AssetVersion>>(request).ConfigureAwait(false);
 			return response.Data;
 		}
 		/// <summary>
@@ -47,8 +58,7 @@ namespace RoSharp.API
 		/// <returns></returns>
 		public async Task<PageContainer<AssetVersion>> AssetVersionAsync(long assetId, long? placeId, int? cursor = null, SortOrder sortOrder = SortOrder.Descending, int? limit = null)
 		{
-			IRestRequest request = new RestRequest("https://api.roblox.com/v2/assets/{id}/versions")
-				.AddUrlSegment("id", assetId)
+			IRestRequest request = new RestRequest($"{_baseUrl}/v2/assets/{assetId}/versions")
 				.AddParameter("sortOrder", sortOrder);
 			if (placeId != null)
 				request.AddParameter("placeId", placeId);
@@ -57,17 +67,23 @@ namespace RoSharp.API
 			if (limit != null)
 				request.AddParameter("limit", limit);
 
-			IRestResponse<PageContainer<AssetVersion>> response = await _restClient.ExecuteAsync<PageContainer<AssetVersion>>(request);
+			IRestResponse<PageContainer<AssetVersion>> response = await _restClient.ExecuteAsync<PageContainer<AssetVersion>>(request).ConfigureAwait(false);
 			return response.Data;
 		}
-
+		/// <summary>
+		/// Awards badge to the speciifed user
+		/// </summary>
+		/// <param name="userId">The ID of the user</param>
+		/// <param name="badgeId">The ID of the badge</param>
+		/// <param name="placeId">The ID of the place</param>
+		/// <returns>{userName} won {badgeCreatorName}'s "{badgeName}" award! (if successful)</returns>
 		public async Task<string> AwardBadgeAsync(ulong userId, ulong badgeId, ulong placeId)
 		{
-			IRestRequest request = new RestRequest("https://api.roblox.com/assets/award-badge")
+			IRestRequest request = new RestRequest($"{_baseUrl}/assets/award-badge")
 				.AddParameter("userId", userId)
 				.AddParameter("badgeId", badgeId)
 				.AddParameter("placeId", placeId);
-			IRestResponse response = await _restClient.ExecuteAsync(request);
+			IRestResponse response = await _restClient.ExecuteAsync(request).ConfigureAwait(false);
 			return response.Content;
 		}
 
